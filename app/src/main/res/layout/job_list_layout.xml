@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textColor="#BA0404"
+        android:id="@+id/TexviewJobName"
+        android:layout_marginLeft="5sp"
+        android:textSize="25sp"
+        android:text="Tên công việc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"/>
+    <ImageView
+        android:id="@+id/ImageDeleteJob"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/icondelete"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"/>
+    <ImageView
+        android:id="@+id/ImageEditJob"
+        android:layout_toLeftOf="@+id/ImageDeleteJob"
+        android:src="@drawable/iconrepare"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"/>
+    <TextView
+        android:id="@+id/TexviewJobDetail"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/TexviewJobName"
+        android:textSize="15sp"
+        android:text="nội dung công việc cần phải làm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/TextViewTime"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:text="2000/09/20 00:00:00"
+        android:layout_below="@+id/TexviewJobDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

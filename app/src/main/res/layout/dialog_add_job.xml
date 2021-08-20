@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:textColor="#CD0000"
+        android:padding="10dp"
+        android:textSize="30sp"
+        android:text="Thêm công việc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editTextJobName"
+        android:hint="Nhập tên công việc"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/editTextJobDeltail"
+        android:inputType="textMultiLine"
+        android:hint="Nhập nội dung công việc(Mô tả,...)"
+        android:layout_below="@+id/editTextJobName"
+        android:height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/editTextDate"
+        android:hint="Chọn ngày"
+        android:layout_below="@+id/editTextJobDeltail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_marginTop="10dp"
+        android:hint="Chọn giờ"
+        android:layout_below="@id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTime"
+        android:layout_centerHorizontal="true"
+        android:text="Thêm" />
+
+
+</RelativeLayout>
